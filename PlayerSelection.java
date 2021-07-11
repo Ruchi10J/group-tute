@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class PlayerSelection {
 
 
+
     public static void main(String[] args) {
 
         ArrayList<Player> Players = new ArrayList<Player>();
@@ -13,26 +14,39 @@ public class PlayerSelection {
         Players.add(p1);
         Players.add(p2);
         Players.add(p3);
-        Scanner obj=new Scanner(System.in);
-        int choice=0;
-        while (choice!=2){
+
+        Scanner obj = new Scanner(System.in);
+        int choice = 0;
+        while (choice != 2) {
             System.out.println("");
-            System.out.println("To add player           :Press A");
-            System.out.println("To view details            :Press V");
+            System.out.println("To add player              :Press 1");
+            System.out.println("To view details            :Press 2");
 
             choice = obj.nextInt();
-            switch (choice){
+            switch (choice) {
                 case 1:
                     System.out.println("");
                     System.out.println("Enter the name of player:");
-                    String playerName=obj.next();
-                    System.out.println(playerName+ "player is added");
+                    String playerName = obj.next();
+                    System.out.println("Enter the age of player:");
+                    int playerAge = obj.nextInt();
+                    System.out.println("Enter the type of player:");
+                    String playerType = obj.next();
+                    System.out.println("Enter the statistics of player:");
+                    int playerStatistics = obj.nextInt();
+                    Player p4=new Player(playerName,playerAge,playerType,playerStatistics);
+
+
                     break;
                 case 2:
                     System.out.println("");
                     System.out.println("Details of the players");
+                    p1.getPlayerDetails();
+                    p2.getPlayerDetails();
+                    p3.getPlayerDetails();
 
-                    Player.playerDetails();
+
+
                     break;
 
                 default:
@@ -41,7 +55,13 @@ public class PlayerSelection {
             }
         }
     }
+
 }
+
+
+
+
+
 
 
 
