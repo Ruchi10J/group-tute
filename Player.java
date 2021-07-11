@@ -12,11 +12,9 @@ public class Player {
         this.statistics = statistics;
 
     }
-    public void playerDetails(){
-        System.out.println(name);
-        System.out.println(age);
-        System.out.println(statistics);
-        System.out.println(type);
+   public  void getPlayerDetails(){
+        System.out.println(name+" "+age+" "+type+" "+statistics);
+
     }
 
 
