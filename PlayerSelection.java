@@ -40,7 +40,7 @@ public class PlayerSelection {
                     break;
                 case 2:
                     System.out.println("");
-                    System.out.println("Details of the players");
+                    System.out.println("Details of the Players");
                     p1.getPlayerDetails();
                     p2.getPlayerDetails();
                     p3.getPlayerDetails();
