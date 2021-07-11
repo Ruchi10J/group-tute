@@ -51,7 +51,7 @@ public class PlayerSelection {
 
                 default:
                     System.out.println("");
-                    System.out.println("Invalid choice:");
+                    System.out.println("Invalid Choice:");
             }
         }
     }
